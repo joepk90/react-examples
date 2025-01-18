@@ -1,5 +1,8 @@
 import { Stack, Typography } from "@mui/material";
+import { HOME } from "@Src/routes";
 import { Link } from "react-router";
+
+import { createRoute } from "@Utils/routes";
 
 export const Home = () => (
   <Stack padding={4}>
@@ -7,6 +10,6 @@ export const Home = () => (
       React Examples
     </Typography>
 
-    <Link to="/">Home</Link>
+    <Link to={createRoute(HOME)}>Home</Link>
   </Stack>
 );
