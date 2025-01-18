@@ -2,12 +2,13 @@ module.exports = {
     root: true,
     env: { browser: true, es2020: true },
     extends: [
+      'eslint-config-prettier',
       'eslint:recommended',
       'plugin:@typescript-eslint/recommended',
       'plugin:react-hooks/recommended',
       'airbnb',
       'airbnb-typescript',
-      'eslint-config-prettier',
+      "prettier",
     ],
     ignorePatterns: ['dist', 'vite.config.ts', 'vitest.config.ts', 'tests', '*.cjs', '.eslintrc.js', 'global.d.ts'],
     parser: '@typescript-eslint/parser',
@@ -66,6 +67,7 @@ module.exports = {
           },
         },
       ],
+      "comma-dangle": [2, "never-multiline"] 
     },
   };
   
