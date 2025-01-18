@@ -1,5 +1,5 @@
 import { Stack, Typography } from "@mui/material";
-import { HOME } from "@Src/routes";
+import { CONTEXT_WITH_LOCAL_STORAGE, HOME } from "@Src/routes";
 import { Link } from "react-router";
 
 import { createRoute } from "@Utils/routes";
@@ -11,5 +11,8 @@ export const Home = () => (
     </Typography>
 
     <Link to={createRoute(HOME)}>Home</Link>
+    <Link to={createRoute(CONTEXT_WITH_LOCAL_STORAGE)}>
+      Context With Local Storage
+    </Link>
   </Stack>
 );
