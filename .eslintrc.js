@@ -67,7 +67,6 @@ module.exports = {
           },
         },
       ],
-      "comma-dangle": [2, "never-multiline"] 
     },
   };
   
