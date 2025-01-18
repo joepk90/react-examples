@@ -1,6 +1,6 @@
 import { Home } from "@mui/icons-material";
 import { Box, IconButton, Stack, Typography } from "@mui/material";
-import { HOME } from "@Src/routes";
+import { HOME, CONTEXT_WITH_LOCAL_STORAGE } from "@Src/routes";
 import React from "react";
 import { Link, Outlet, useLocation } from "react-router";
 
@@ -8,6 +8,7 @@ import { createRoute } from "@Utils/routes";
 
 const PagePathTitleMap: Record<string, string> = {
   [createRoute(HOME)]: "Home",
+  [createRoute(CONTEXT_WITH_LOCAL_STORAGE)]: "Context With Local Storage",
 };
 
 export const PageLayout: React.FC = () => {
